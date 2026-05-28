@@ -284,6 +284,14 @@
     font-weight: 600;
     color: #444;
     margin-bottom: 6px;
+    /* Reserve room for up to two lines so a wrapping label (e.g. "Spring-Gaus")
+       doesn't push its figure below the others; bottom-align the text so all
+       names hug the figures and the figures stay on one line. */
+    min-height: 2.4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    line-height: 1.2;
   }
 
   .scene-name {
