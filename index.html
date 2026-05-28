@@ -421,6 +421,11 @@
     .paper-authors { font-size: 0.95rem; }
     .section-title { font-size: 1.3rem; }
     .page { padding-top: 36px; }
+
+    /* The side navigation arrows eat into the limited width on phones.
+       Hide them and let the thumbnail strip (and swipe/keyboard) drive navigation. */
+    .carousel-arrow { display: none; }
+    .carousel-stage { gap: 0; }
   }
 </style>
 </head>
