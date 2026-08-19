@@ -1,0 +1,46 @@
+{
+    "gs":{
+        "eval": true,
+        "quiet": false,
+	"position_lr_init": 0.0001,
+	"scaling_lr": 0.0001
+    },
+    "physics":{
+        "id": 0,
+        "material": 10,
+        "rho": 1000,
+        "init_E": 5.0,
+        "init_nu": 0.25,
+
+        "mpm_iter_cnt": 100,
+        "n_frames": 14,
+        "fps": 120,
+        "gravity": [0, 0, 9.8],
+        "bc": {
+            "ground":[[0, 0, -0.01], [0, 0, -1], 0]
+        },
+
+        "density_grid_size": 0.04,
+        "density_min_th": 0.67, 
+        "opacity_threshold": 0.005, 
+        "random_sample": true,
+
+        "w_img": 0.0, 
+        "w_alp": 1.0,
+
+        "params": {
+            "Youngs modulus": {
+                "init_lr": 0.1
+            },
+            "Poisson ratio": {
+                "init_lr": 0.05
+            }
+        },
+        "n_iters": 500,
+        "n_init_frames": 5,
+        "full_rollout_at": 150,
+        "vel_lr": 0.05,
+        "gravity_lr": 0.0,
+        "init_vel": [0.0, 0.0, 0.0]
+    }
+}
